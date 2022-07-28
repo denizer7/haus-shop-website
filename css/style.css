@@ -72,7 +72,7 @@ body {
 }
 
 .burger_menu a {
-    
+
     text-transform: uppercase;
     text-decoration: none;
     color: #FFFFFF;
@@ -82,7 +82,8 @@ body {
     height: 30px;
     text-align: start;
 }
-.burger_menu a:hover{
+
+.burger_menu a:hover {
     text-shadow: 1px 1px 1px #FFFFFF;
     transition: all 0.5s;
 }
@@ -182,13 +183,50 @@ li {
     font-size: 73px;
     font-family: Liberation serif;
     font-weight: 400;
+    animation-name: rightin;
+    animation-duration: 3s;
+    
 
 }
 
+@keyframes rightin {
+    0% {
+        transform: translateX(100%);
+         }
+
+    100% {
+        transform: translateX(0);
+
+    }
+}
+   
+@keyframes rightin2 {
+    0% {
+        transform: translateX(0);
+        
+
+    }
+
+    100% {
+        transform: translateX(-100%);
+        visibility: visible;
+
+    }
+}
+    
+
 .right_block_discription {
     font-size: 18px;
-    margin: 20px 5px 0 0 ;
-     line-height: 32px;
+    margin: 20px 5px 0 0;
+    line-height: 32px;
+    animation-name: rightin2;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    position: relative;
+    left: 100% ;
+    visibility: hidden;
+
 }
 
 .right_block_btn {
@@ -635,7 +673,7 @@ footer {
 }
 
 
-.follow_box{
+.follow_box {
     display: flex;
     justify-content: space-evenly;
     width: 50%;
@@ -658,8 +696,8 @@ footer {
 .follow {
     margin: 0 50px 0 0;
 }
-    
-    
+
+
 
 .footer_end {
     padding: 160px 0 0 60px;
@@ -782,25 +820,27 @@ footer li:hover {
 
 @media (max-width:992px) {
 
-    .burger_menu a:hover{
+    .burger_menu a:hover {
         text-shadow: none;
-        transition:none;
+        transition: none;
     }
 
-    .burger_menu a:active{
+    .burger_menu a:active {
         text-shadow: 1px 1px 1px #FFFFFF;
     }
+
     .right_block_btn:hover {
         box-shadow: none;
         transition: none;
     }
 
-   .right_block_btn a:hover {
+    .right_block_btn a:hover {
         font-size: 12px;
-        font-weight:  400;
-        transition: none;}
+        font-weight: 400;
+        transition: none;
+    }
 
-    .right_block_btn a:active{
+    .right_block_btn a:active {
         font-weight: 700;
     }
 
@@ -810,35 +850,35 @@ footer li:hover {
         transition: none;
     }
 
-    .natural_btn:active{
+    .natural_btn:active {
         position: relative;
         top: 2px;
     }
-    
+
     .black_set_mood button:hover a {
         font-size: 12px;
         font-weight: 400;
         transition: none;
     }
-    
+
     .black_set_mood button:hover {
         box-shadow: none;
         transition: none;
     }
 
-    .black_set_mood button:active{
+    .black_set_mood button:active {
         position: relative;
-        top:2px;
+        top: 2px;
     }
 
     .stay_posted button a:hover {
-    text-shadow:none;
-    font-size: 12px;
-    transition:none;
+        text-shadow: none;
+        font-size: 12px;
+        transition: none;
     }
 
     .stay_posted button a:active {
-    text-shadow: 1px 1px 0 #FFFFFF;
+        text-shadow: 1px 1px 0 #FFFFFF;
     }
 
     nav a:hover {
@@ -849,29 +889,31 @@ footer li:hover {
 
     nav a:active {
         text-shadow: 1px 1px 1px #FFFFFF;
-        font-size: 12px;    
+        font-size: 12px;
     }
 
-    footer li:hover{
+    footer li:hover {
         color: none;
         text-shadow: none;
-    } 
+    }
 
     footer li:active {
         color: #FFFFFF;
         text-shadow: 1px 0 0 #FFFFFF80;
     }
 
-    .follow:active{
+    .follow:active {
         top: 2px;
     }
 
 
     
 
-     header img{
+
+    header img {
         left: 45%;
     }
+
     .burger_menu {
         display: block;
     }
@@ -884,20 +926,20 @@ footer li:hover {
         display: none;
     }
 
-    .web_discription{
+    .web_discription {
         flex-direction: column;
         align-items: center;
     }
 
-    .new_yorkk_times{
+    .new_yorkk_times {
         width: auto;
     }
 
-    .bon_appetit{
+    .bon_appetit {
         width: auto;
     }
 
-    .web_discription img{
+    .web_discription img {
         margin: 10px 0 30px 0;
     }
 
@@ -906,7 +948,8 @@ footer li:hover {
         padding: 50px 10px 0 0px;
     }
 
-    .left_block,.color_right_block{
+    .left_block,
+    .color_right_block {
         height: 620px;
     }
 
@@ -914,409 +957,418 @@ footer li:hover {
         font-size: 40px;
     }
 
-    .natural_img{
+    .natural_img {
         flex-direction: column;
         align-items: center;
         margin: 25px 0 0 0;
     }
 
-    .natural_img_title{
+    .natural_img_title {
         margin: 10px 0 10px 0;
     }
 
-    .natural_btn{
+    .natural_btn {
         margin: 10px 0 0 0;
     }
 
-    .sampler_kit,.citrus,.grapefruit{
+    .sampler_kit,
+    .citrus,
+    .grapefruit {
         width: 60%;
     }
 
-    .grapefruit{
+    .grapefruit {
         margin: 35px 0 35px 0;
     }
 
-     .easy_drink{
+    .easy_drink {
         flex-direction: column-reverse;
         align-items: center;
     }
 
-    .easy_drink_img{
+    .easy_drink_img {
         width: auto;
-       
+
     }
 
-    .easy_drink_img img{
+    .easy_drink_img img {
         width: 100%;
     }
-    .easy_drink_text{
+
+    .easy_drink_text {
         text-align: center;
         margin: 35px 0 0 0;
     }
 
-    .our_flavors{
+    .our_flavors {
         display: inherit;
     }
 
-    .our_flavors_img{
+    .our_flavors_img {
         margin: auto;
         width: 75%;
     }
 
-    .our_flavors_img img{
+    .our_flavors_img img {
         width: 100%;
     }
 
-    .our_flavors_text{
+    .our_flavors_text {
         width: auto;
         text-align: center;
-        
+
     }
 
-    .our_flavors_text p:nth-child(1){
+    .our_flavors_text p:nth-child(1) {
         font-size: 40px;
         margin: 20px 0 0 0;
     }
 
-    .our_flavors_text p:nth-child(2){
+    .our_flavors_text p:nth-child(2) {
         margin: 30px 0 20px 0;
     }
 
-    .set_mood{
+    .set_mood {
         height: 450px;
     }
 
-    .black_set_mood{
-        
+    .black_set_mood {
+
         height: 175px;
     }
 
-    .black_set_mood button{
+    .black_set_mood button {
         height: 35px;
     }
 
-    .black_set_mood a{
+    .black_set_mood a {
         padding: 12px 0 0 0;
     }
-    
-    .black_set_mood p:nth-child(1){
+
+    .black_set_mood p:nth-child(1) {
         font-size: 30px;
     }
 
-    .black_follow_us{
-       
+    .black_follow_us {
+
         bottom: 50px;
     }
 
-    .footer_contact{
+    .footer_contact {
         display: block;
     }
 
-    .stay_posted{
+    .stay_posted {
         width: 70%;
         text-align: center;
         margin: auto;
         padding: 45px 0 0 0;
     }
-    .stay_posted button{
+
+    .stay_posted button {
         left: 67%;
     }
 
-    .follow_box{
+    .follow_box {
         justify-content: space-evenly;
         width: auto;
         padding: 45px 0 0px 90px;
     }
 
-    .follow{
+    .follow {
         position: relative;
-        
+
     }
 
-    .follow p{
+    .follow p {
         margin: 0;
     }
 
-    .follow_link{
+    .follow_link {
         display: none;
         position: absolute;
     }
 
-    .follow_text{
+    .follow_text {
         display: inline-block;
         cursor: pointer;
-        
+
     }
 
-    .follow_text:active + .follow_link {
-        display: block;
-     }
-
-     .follow_text:hover + .follow_link {
-        display: block;
-     }
-
-
-    .follow_link:hover{
+    .follow_text:active+.follow_link {
         display: block;
     }
 
-    .footer_contact li{
+    .follow_text:hover+.follow_link {
+        display: block;
+    }
+
+
+    .follow_link:hover {
+        display: block;
+    }
+
+    .footer_contact li {
         margin: 6px 0 0 0;
     }
 
-    .footer_end{
+    .footer_end {
         padding: 260px 0 0 0;
     }
 
-    .footer_end ul{
+    .footer_end ul {
         justify-content: space-evenly;
     }
 
 
-   
+
 
 }
 
 @media (max-width:768px) {
 
-    .left_block,.color_right_block{
+    .left_block,
+    .color_right_block {
         height: 520px;
     }
 
-    header img{
+    header img {
         left: 44%;
-    }    
+    }
 
-    .right_block_title{
+    .right_block_title {
         font-size: 30px;
     }
 
-    .right_block_discription{
+    .right_block_discription {
         font-size: 14px;
     }
 
-    .right_block_btn{
-    width: 140px;
-    height: 40px;
-    }
-
-    .right_block_btn a{
-        padding: 12px 0 0 0;
-    }
-
-    .natural_title p:nth-child(1){
-        font-size: 30px;
-    }
-
-    .natural_img_title{
-        font-size: 24px;
-    }
-
-    .natural_images_box img{
-        width: 250px;
-    }
-
-    .natural_btn{
+    .right_block_btn {
         width: 140px;
         height: 40px;
     }
 
-    .natural_btn a{
+    .right_block_btn a {
         padding: 12px 0 0 0;
     }
-    .aperetif_description p:nth-child(1){
+
+    .natural_title p:nth-child(1) {
         font-size: 30px;
     }
 
-    .easy_drink_img img{
+    .natural_img_title {
+        font-size: 24px;
+    }
+
+    .natural_images_box img {
+        width: 250px;
+    }
+
+    .natural_btn {
+        width: 140px;
+        height: 40px;
+    }
+
+    .natural_btn a {
+        padding: 12px 0 0 0;
+    }
+
+    .aperetif_description p:nth-child(1) {
+        font-size: 30px;
+    }
+
+    .easy_drink_img img {
         height: 300px;
     }
 
-    .black_section{
-        height:275px
+    .black_section {
+        height: 275px
     }
 
-    .black_section div p:nth-child(1){
+    .black_section div p:nth-child(1) {
         font-size: 14px;
     }
 
-    .black_section div{
+    .black_section div {
         margin: 10% 0 0 0;
     }
 
-    .our_flavors_img{
+    .our_flavors_img {
         width: 60%;
     }
 
-    .our_flavors_text p:nth-child(1){
+    .our_flavors_text p:nth-child(1) {
         font-size: 30px;
     }
 
-    .our_flavors_text p:nth-child(2){
+    .our_flavors_text p:nth-child(2) {
         font-size: 14px;
     }
 
-    .black_set_mood p:nth-child(2){
+    .black_set_mood p:nth-child(2) {
         font-size: 14px;
     }
 
-    .stay_posted p:nth-child(2){
+    .stay_posted p:nth-child(2) {
         font-size: 14px;
     }
 
-    .footer_end a{
+    .footer_end a {
         font-size: 8px;
     }
 
-    .stay_posted button{
+    .stay_posted button {
         left: 76%;
     }
 
 }
 
-@media (max-width:576px)  {
-    
-    .black_follow_us,.black_set_mood{
+@media (max-width:576px) {
+
+    .black_follow_us,
+    .black_set_mood {
         width: 80%;
         left: 11%;
     }
 
-    .left_block,.color_right_block{
+    .left_block,
+    .color_right_block {
         height: 450px;
     }
 
-    .right_block_text{
+    .right_block_text {
         margin: 17% 5% 0 5%;
     }
-    .right_block_title{
+
+    .right_block_title {
         font-size: 24px;
     }
 
-    .right_block_discription{
+    .right_block_discription {
         font-size: 12px;
     }
 
-    .right_block_btn{
+    .right_block_btn {
         margin: 30px 0 0 15px;
     }
 
-   
 
-    header img{
+
+    header img {
         left: 40%;
     }
 
-    .web_discription{
+    .web_discription {
         font-size: 16px;
     }
 
-    .natural_title p:nth-child(1){
+    .natural_title p:nth-child(1) {
         font-size: 24px;
     }
 
-    .aperetif_description{
+    .aperetif_description {
         flex-direction: column;
         align-items: center;
     }
 
-    .aperetif_description p:nth-child(1){
+    .aperetif_description p:nth-child(1) {
         font-size: 24px;
     }
 
-    .aperetif_description p:nth-child(2){
+    .aperetif_description p:nth-child(2) {
         font-size: 16px;
         width: 90%;
         text-align: center;
         margin: 20px 0 0 0;
     }
 
-    .natural_images_box img{
+    .natural_images_box img {
         width: 200px;
     }
 
 
-    .natural_img_subtitle{
+    .natural_img_subtitle {
         font-size: 14px;
     }
 
-    .easy_drink_img img{
+    .easy_drink_img img {
         height: 200px;
     }
 
-    .easy_drink_text{
+    .easy_drink_text {
         width: 90%;
         margin: 50px 0 0 0;
     }
 
-    .easy_drink p:nth-child(odd){
+    .easy_drink p:nth-child(odd) {
         font-size: 24px;
     }
 
-    .easy_drink p:nth-child(even){
+    .easy_drink p:nth-child(even) {
         font-size: 14px;
         margin: 10px 0 25px 0;
     }
 
-    .black_section{
+    .black_section {
         flex-direction: column;
         align-items: center;
         height: 300px;
     }
 
-    .black_section div{
+    .black_section div {
         margin: 0;
         width: 90%;
     }
 
-    .black_section div p:nth-child(2){
+    .black_section div p:nth-child(2) {
         margin: 0;
     }
 
-    .our_flavors_text p:nth-child(1){
+    .our_flavors_text p:nth-child(1) {
 
         font-size: 24px;
     }
 
-    .black_set_mood p:nth-child(1){
+    .black_set_mood p:nth-child(1) {
         font-size: 24px;
     }
 
-    .black_set_mood{
+    .black_set_mood {
         padding: 25px 0 0 0;
     }
 
-    .black_set_mood p:nth-child(2){
+    .black_set_mood p:nth-child(2) {
         padding: 10px 0 0 0;
         margin: 0 5%;
     }
 
-    .black_set_mood button{
+    .black_set_mood button {
         margin: 5% 0 0 27%;
     }
 
-    .stay_posted p:nth-child(1){
+    .stay_posted p:nth-child(1) {
         font-size: 24px;
         margin: 0 0 20px 0;
     }
 
-    .stay_posted input{
+    .stay_posted input {
         width: 85%;
     }
 
-    .stay_posted div{
+    .stay_posted div {
         margin: 20px 0 0 0;
     }
 
-    .follow_box{
+    .follow_box {
         padding: 20px 0 0 80px;
     }
 
-    .footer_end li{
+    .footer_end li {
         margin: 0;
     }
 
-    .link_last{
+    .link_last {
         left: -48px;
     }
 
