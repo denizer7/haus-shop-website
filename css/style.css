@@ -218,7 +218,7 @@ li {
     animation-name: rightin3;
     animation-fill-mode: forwards;
     animation-duration: 3s;
-    animation-delay: 4s;
+    animation-delay: 3s;
 }
 
 @keyframes rightin {
@@ -1271,7 +1271,7 @@ footer li:hover {
     }
 
     .right_block_btn {
-        margin: 50px 0 0 15px;
+        margin: 50px 0 0 0;
     }
 
 
